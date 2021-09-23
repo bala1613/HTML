@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>First Form</title>
+    </head>
+    <body>
+        <form name ="myform">
+            
+            <label for ="name">Username :</label><br>
+            <input type = "text" id="fname" ><br>
+            <label for="pass">Password : </label><br>
+            <input type = "text" id="pass"><br>
+            <button onclick="validate()">Submit</button>
+        </form>
+    </body>
+    <script>
+        function validate()
+        {
+            var a=document.myform.fname.value;  
+            var b=document.myform.pass.value;  
+  
+            if (a == "bala" & b == "1234"){
+            alert("logged successfully")
+            }
+            else{
+                alert("Wrong Password")
+            }
+        }
+    </script>
+</html>
